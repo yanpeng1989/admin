@@ -46,7 +46,7 @@ public class ModelController {
     }
     @RequestMapping(value = "icon.do")
     public String Icon(){
-        return "icon";
+        return "/model/icon";
     }
     @RequestMapping(value = "index.do")
     public String Index(){
@@ -67,6 +67,10 @@ public class ModelController {
     @RequestMapping(value = "typography.do")
     public String Typography(){
         return "/model/typography";
+    }
+    @RequestMapping(value = "grid.do")
+    public String Grid(){
+        return "/model/grid";
     }
     @RequestMapping(value = "ui.do")
     public String Ui(){

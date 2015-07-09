@@ -85,7 +85,7 @@
 <div class="content">
     The page your are looking for is not found.
     <br>
-    <a href="index.html">Go Home</a>
+    <a href="index.do">Go Home</a>
     or
     <br>
     <br>

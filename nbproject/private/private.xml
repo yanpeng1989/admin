@@ -2,6 +2,17 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/F:/admin/src/java/com/admin/service/AdminService.java</file>
+            <file>file:/F:/admin/src/java/com/admin/dao/AdminDAO.java</file>
+            <file>file:/F:/admin/src/java/com/admin/web/HomeController.java</file>
+            <file>file:/F:/admin/web/WEB-INF/jsp/delete_goods.jsp</file>
+            <file>file:/F:/admin/web/WEB-INF/jsp/success.jsp</file>
+            <file>file:/F:/admin/web/WEB-INF/jsp/add_man.jsp</file>
+            <file>file:/F:/admin/web/WEB-INF/jsp/index.jsp</file>
+            <file>file:/F:/admin/web/WEB-INF/jsp/delete_man.jsp</file>
+            <file>file:/F:/admin/web/WEB-INF/jsp/error.jsp</file>
+            <file>file:/F:/admin/web/WEB-INF/jsp/add_goods.jsp</file>
+        </group>
     </open-files>
 </project-private>
