@@ -35,7 +35,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html"> <img alt="Charisma Logo" src="img/logo20.png" class="hidden-xs"/>
+                <a class="navbar-brand" href="index.do"> <img alt="Charisma Logo" src="img/logo20.png" class="hidden-xs"/>
                     <span>admin</span></a>
                 <div class="btn-group pull-right">
                     <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
@@ -43,7 +43,7 @@
                         <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu">
-                        <li><a href="#">切换账户</a></li>
+                        <li><a href="login.do">切换账户</a></li>
                         <li class="divider"></li>
                         <li><a href="login.do">退出</a></li>
                     </ul>
@@ -129,7 +129,7 @@
                                                         </select>
                                                     </div>
                                                     <div style="width: 200px" class="form-group has-warning col-md-4">
-                                                        <label class="control-label" for="inputWarning1">标签</label>
+                                                        <label class="control-label" for="inputWarning1">品名</label>
                                                         <input type="text" name="proname" id="proname" class="form-control" >
                                                     </div>
                                                     <div style="width: 200px" class="form-group has-error col-md-4">

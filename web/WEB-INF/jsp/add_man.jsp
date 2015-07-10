@@ -43,7 +43,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html"> <img alt="Charisma Logo" src="img/logo20.png" class="hidden-xs"/>
+                <a class="navbar-brand" href="index.do"> <img alt="Charisma Logo" src="img/logo20.png" class="hidden-xs"/>
                     <span>admin</span></a>
                 <div class="btn-group pull-right">
                     <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
@@ -51,7 +51,7 @@
                         <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu">
-                        <li><a href="#">切换账户</a></li>
+                        <li><a href="login.do">切换账户</a></li>
                         <li class="divider"></li>
                         <li><a href="login.do">退出</a></li>
                     </ul>
@@ -88,15 +88,15 @@
                                 <li class="accordion">
                                     <a href="#"><i class="glyphicon glyphicon-plus"></i><span>物品管理</span></a>
                                     <ul class="nav nav-pills nav-stacked">
-                                        <li><a href="#">增加物品</a></li>
-                                        <li><a href="#">删除物品</a></li>
+                                        <li><a href="/admin/add_goods.do">增加物品</a></li>
+                                        <li><a href="/admin/delete_goods.do">删除物品</a></li>
                                     </ul>
                                 </li>
                                 <li class="accordion">
                                     <a href="#"><i class="glyphicon glyphicon-plus"></i><span>人员管理</span></a>
                                     <ul class="nav nav-pills nav-stacked">
-                                        <li><a href="#">增加人员</a></li>
-                                        <li><a href="#">删除人员</a></li>
+                                        <li><a href="/admin/add_man.do">增加人员</a></li>
+                                        <li><a href="/admin/delete_man.do">删除人员</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -107,10 +107,10 @@
                     <div>
                         <ul class="breadcrumb">
                             <li>
-                                <a href="#">账户管理</a>
+                                <a href="#">人员管理</a>
                             </li>
                             <li>
-                                <a href="#">权限管理</a>
+                                <a href="#">增加人员</a>
                             </li>
                         </ul>
                     </div>
@@ -123,7 +123,7 @@
                                 <div  style="height: 550px "class="box-content row">
                                     <div style="width: 99%;height: 150px;margin-left: 5px;margin-top: -5px" class="well">
                                         <div class="page-header">
-                                            <h3 style="margin-top: -40px">增加物品</h3>
+                                            <h3 style="margin-top: -40px">增加人员</h3>
                                         </div>
                                         <div class="control-group">
                                             <div class="controls">
@@ -169,9 +169,9 @@
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
-                                                                <c:forEach var="mm" items="${man}">
+                                                                <c:forEach var="mm" items="${man}" varStatus="varStatus">
                                                                     <tr>
-                                                                        <td>${mm.id}</td>
+                                                                        <td>${varStatus.count}</td>
                                                                         <td>${mm.name}</td>
                                                                         <td class="center">${mm.telephone}</td>
                                                                         <td class="center">${mm.type}</td>
@@ -194,7 +194,6 @@
             <hr>
         </div>
         <script type="text/javascript">
-
             $("#btn_1").click(function () {
                 if ($("#proname").val() == '') {
                     alert("请填写标签");

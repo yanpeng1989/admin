@@ -73,7 +73,7 @@ public class HomeController {
     @RequestMapping(value = "delete_man.do")
     public String Delete_man(Model model) {
         model.addAttribute("man", adminService.List_man_Service());
-        return "delete_goods";
+        return "delete_man";
     }
 
     @RequestMapping(value = "delete_g.do")

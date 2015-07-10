@@ -82,7 +82,7 @@
     <body>
 
         <p class="error-code">
-            error
+            SUCCESS
         </p>
 
         <p class="not-found">YES<br/>SUCCESS</p>

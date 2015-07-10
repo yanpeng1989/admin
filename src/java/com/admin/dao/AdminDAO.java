@@ -29,7 +29,7 @@ public class AdminDAO {
     public JdbcTemplate jdbcTemplate;
 
     public boolean Login_Msg(String telephone, String password) {
-        String sql = "SELECT SUM(id) FROM man WHERE telephone=? AND authority=?";
+        String sql = "SELECT SUM(id) FROM admin WHERE telephone=? AND authority=?";
         try {
             int sum = jdbcTemplate.queryForObject(sql, new Object[]{telephone, password}, Integer.class);
             if (sum > 0) {
